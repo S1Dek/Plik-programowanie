@@ -12,7 +12,9 @@ if (session_status() == PHP_SESSION_NONE) {
 </head>
 <body>
     <header>
+        <div class="header-space1"></div>
         <h1>Witamy w Żabce Online!</h1>
+        <div class="header-space2"></div>
         <div class="header-left">
             <?php if (isset($_SESSION['user'])): ?>
                 <span>Witaj, <?php echo htmlspecialchars($_SESSION['user']['username']); ?>!</span>
@@ -36,7 +38,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <li><a href="/sklep-internetowy/admin/manage_products.php">Zarządzaj produktami</a></li>
             <?php endif; ?>
             <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'user'): ?>
-                <li><a class="shopping" href="/sklep-internetowy/user/cart.php">Koszyk<span class="quantity">0</span></a></li>
+                <li><a class="shopping" href="/sklep-internetowy/user/cart.php">Koszyk<!--<span class="quantity">0</span>--></a></li>
                 <li><a href="/sklep-internetowy/user/index.php">Produkty</a></li>
             <?php endif; ?>
         </ul>
