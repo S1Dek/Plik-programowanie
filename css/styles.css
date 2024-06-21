@@ -17,13 +17,18 @@ header {
 
 header h1 {
     flex-grow: 1;
-    transform: translateX(10%);
+    transform: translateX(15%);
     margin: 0;
 }
 
 header a {
     margin: 0 30px;
     text-decoration: none;
+}
+
+.header-space1,
+.header-space2 {
+    width: 15%;
 }
 
 .header-left {
@@ -100,7 +105,8 @@ form button {
     margin-bottom: 10px;
 }
 
-.shopping span {
+
+/*.shopping span {
     background: red;
     border-radius: 50%;
     display: flex;
@@ -111,4 +117,4 @@ form button {
     top: 85px;
     left: 50%;
     padding: 3px 10px;
-}
+}*/
